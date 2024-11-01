@@ -4,27 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <h1>Quiznight</h1>
 </head>
 
-<body>
-<h1>Simons quiznight</h1>
+<body id="body">    
+  <div id="userSection">
+    <div id="userInput">
+    <h2>Enter user info</h1>
+    <legend>Enter First name</legend>
+    <input id="fistName">
+    <br>
+    <legend>Enter last name</legend>
+    <input id="lastName">
+    <br>
+    <legend>Enter Email</legend>
+    <input id="email">
+<br> 
+</div>
+    </div>
 
-<form id="quizForm">
-<h2>Who is takning the quiz</h2>
-<label for="firstName">First Name </label>
-<input type="text" id="firstName" required>
-<span class="error-message" id="firstNameError"></span>
-<br>
-<label for="lastName"> Last Name </label>
-<input type="text" id="lastName" required>
-<span class="error-message" id="lastNameError"></span>
-<br>
-<label for="Email">Email</label>
-<input type="text" id="Email" required>
-<span class="error-message" id="emailError"></span>
-<br>
-<h2>Quiztime!</h2>
+    <div id="userSection">
+        <div id="userInput">
+        <h2>Quiz</h1>
+        <legend>What is the capital of Sweden</legend>
+        <input id="Q1">
+        <br>
+        <legend>Question two</legend>
+        <input id="Q2">
+        <br>
+        <legend>Question three</legend>
+        <input id="Q3">
+        <br>
+        <label for="dropdown">Choose an option:</label>
+    <select id="dropdown" name="dropdown">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+    <br>
+    <h3>Select your options:</h3>
+    
+    <label>
+        <input type="checkbox" name="option1" value="option1">
+        Option 1
+    </label><br>
 
-</form>
+    <label>
+        <input type="checkbox" name="option2" value="option2">
+        Option 2
+    </label><br>
+
+    <label>
+        <input type="checkbox" name="option3" value="option3">
+        Option 3
+    </label>
+    <br>
+    <button>Check</button>
+
 </body>
