@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="styles.css">
+
     <h1>Quiznight</h1>
 </head>
 
@@ -21,6 +22,15 @@
     <legend>Enter Email</legend>
     <input id="email">
 <br> 
+<form id="ageForm">
+    <h3>Please select your age:</h3>
+    <input type="radio" id="age" value="30">
+    <label>0 - 30</label><br>
+    <input type="radio" id="age"value="60">
+    <label>31 - 60</label><br>  
+    <input type="radio" id="age"value="100">
+    <label>61 - 100</label>
+  </form>
 </div>
     </div>
 
@@ -30,36 +40,41 @@
         <legend>What is the capital of Sweden</legend>
         <input id="Q1">
         <br>
-        <legend>Question two</legend>
+        <legend>What is capital of Germany</legend>
         <input id="Q2">
         <br>
-        <legend>Question three</legend>
+        <legend>What is the capital of france</legend>
         <input id="Q3">
         <br>
-        <label for="dropdown">Choose an option:</label>
-    <select id="dropdown" name="dropdown">
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
+        <h3>What is a real coding languange</h3>
+        <select id="dropdown" name="dropdown">
+        <option value="Sapa">Sapa</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Snake">Snake</option>
     </select>
     <br>
-    <h3>Select your options:</h3>
+    <h3>What is the natioal dish of sweden?</h3>
     
     <label>
         <input type="checkbox" name="option1" value="option1">
-        Option 1
+        Meatballs
     </label><br>
 
     <label>
         <input type="checkbox" name="option2" value="option2">
-        Option 2
+        Pizza
+        
     </label><br>
 
     <label>
         <input type="checkbox" name="option3" value="option3">
-        Option 3
+       Falafel
     </label>
     <br>
-    <button>Check</button>
+    <button onclick="validateQuiz();">Check results</button>
+    <p id="feedback"></p>
+    <p id="feedback1"></p>
+
+    <script src="script.js"></script>
 
 </body>
