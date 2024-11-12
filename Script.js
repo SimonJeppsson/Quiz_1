@@ -50,6 +50,4 @@
         document.getElementById("feedback").innerHTML = feedback;
         document.getElementById("feedback1").innerHTML = feedback1;
 
-        
-
     };
